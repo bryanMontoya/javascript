@@ -24,7 +24,22 @@ var articulosFiltrados = articulos.filter(function(articulo){
     return articulo.costo < 500
 });
 
+//Recorre todos
 var articulosNombres = articulos.map(function(articulo){
     return articulo.nombre
+});
+
+//Devuelve el primero
+var articulosEncontrados = articulos.find(function(articulo){
+    return articulo.nombre === "bici"
+});
+
+articulos.forEach(function(articulo){
+    console.log(articulo.nombre);
+});
+
+//Existe articulo
+var artiSome = articulos.some(function(articulo){
+    return articulo.costo <= 700
 });
 
