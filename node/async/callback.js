@@ -1,4 +1,4 @@
-function hola(nombre, miCallback){
+/*function hola(nombre, miCallback){
     setTimeout(function(){
         console.log("Hola asincrona " + nombre); //Asincrona espera 1000 ms
         miCallback(nombre);
@@ -20,5 +20,29 @@ hola('carlos' ,function(nombre){
 });
 
 // hola('Carlos', function(){})
-// adios('Carlos', function(){})
+// adios('Carlos', function(){})*/
 
+
+function hola(nombre, miCallback){
+    setTimeout(function() {
+        console.log("Hola " + nombre);
+        miCallback(nombre);
+    }, 2000)
+}
+
+function adios(nombre, otrocallback){
+    setTimeout(function(){
+        console.log("Adios " + nombre);
+        otrocallback();
+    }, 1000);
+}
+
+console.log("Iniciando");
+
+hola("Brayan", function(nombre){
+    adios(nombre, function(){
+        console.log("Terminando Proceso...")
+    });    
+}); 
+
+//alt shift a
