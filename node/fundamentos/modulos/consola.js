@@ -1,24 +1,18 @@
 console.clear();
 
 console.group("Conversacion");
-
 console.log("Hola");
 console.log("Hola");
 console.log("Hola");
-
 console.groupEnd("termina COnversacion");
 
 
 console.group("Otras funciones");
-
-
 console.log("Algo");
-
 console.info("Info");
-
 console.error("Error");
-
 console.warn("Warning");
+
 
 var tabla = [
     {
@@ -32,7 +26,6 @@ var tabla = [
 ]
 console.log(tabla)
 console.table(tabla)
-
 
 console.count("veces");
 console.count("veces");

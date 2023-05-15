@@ -26,5 +26,5 @@ function borrar(ruta, cb){
 }
 
 //borrar(__dirname + '/archivo1.txt');
-//leer(__dirname + '/archivo.txt', console.log);
+leer(__dirname + '/archivo.txt', console.log);
 //escribir(__dirname + '/archivo1.txt', "Soy un archivo nuevo", console.log)

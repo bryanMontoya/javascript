@@ -18,4 +18,4 @@ console.log(__filename);
 
 // --varible global
 global.mivariable = "mivariable";
-console.log(mivariable)
+console.log(mivariable);

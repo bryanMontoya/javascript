@@ -21,9 +21,9 @@ function seRompeAsincrona(cb){
 }
 
 try {
-    //otraFuncion();
-    seRompeAsincrona(function(){
+    seRompeAsincrona(function(error){
         console.log("Hay error");
+        console.error(error.message);
     });
 } catch (error) {
     console.error("Un error");
