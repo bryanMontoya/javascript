@@ -1,5 +1,6 @@
 const fs = require('fs');
 const stream = require('stream');
+const util = require('util');
 
 let data = '';
 
@@ -20,4 +21,8 @@ readeableStream.setEncoding('UTF8');
 // process.stdout.write('tal');
 // process.stdout.write('estas');
 
+const Transform = stream.Transform;
 
+function Mayus(){
+    Transform.call(this);
+}
